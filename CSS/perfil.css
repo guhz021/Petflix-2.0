@@ -1,0 +1,87 @@
+/* Reset básico e configuração de fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.profile-screen {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.profile {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.profile-img {
+    width: 100px;  
+    height: 100px; 
+    border-radius: 50%;  
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border: 3px solid transparent;
+    transition: border 0.3s;
+}
+
+.profile-name {
+    background-color: #333;
+    padding: 15px; 
+    border-radius: 10px;
+    cursor: pointer;
+    width: 160px;  
+    height: 70px; 
+    text-align: center;
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    transition: background-color 0.3s;
+    color: white; 
+    text-decoration: none;  
+}
+
+
+.profile:hover .profile-img {
+    border: 3px solid #e50914; 
+}
+
+.profile:hover .profile-name {
+    background-color: #e50914;
+}
+
+.profile.large-profile .profile-name {
+    font-size: 18px;  
+    padding: 20px;  
+    width: 160px;  
+}

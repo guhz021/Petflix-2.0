@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Exclusão de Conta</title>
+    <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EXCLUIR SUA CONTA</h1>
+        <!-- O formulário de registro -->
+
+    <form id="registroForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="password1">Senha:</label>
+        <input type="password" id="password1" name="password" required>
+
+        <label for="password2">Digite a senha novamente:</label>
+        <input type="password" id="password2" name="password" required>
+
+        <button type="submit" id="confirmarBtn">Confirmar</button>
+    </form>
+
+        <!-- Link para voltar à tela de login -->
+        <a href="../HTML/usuario.html" class="back-link">Voltar</a>
+
+    </div>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            // Previne o envio do formulário
+            event.preventDefault();
+    
+            // Obtém os valores das senhas
+            var password1 = document.getElementById('password1').value;
+            var password2 = document.getElementById('password2').value;
+    
+            // Verifica se as senhas são iguais
+            if (password1 === password2 && password1 !== "") {
+                // Redireciona para a página de registro
+                window.location.href = '../HTML/login.html';
+            } else {
+                alert("As senhas não coincidem ou estão em branco.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Reset básico e configuração de fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #393939);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do formulário */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgb(163, 162, 162);
+    max-width: 510px;
+    width: 100%;
+}
+
+/* Estilos do título do formulário */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+/* Estilos do grupo de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos dos rótulos dos campos de entrada */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos dos campos de entrada, seleção e texto */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+/* Estilo para o campo de texto (textarea) */
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Estilo para a seção de vacinas */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 10px; /* Espaçamento entre os elementos */
+    margin-top: 10px;
+}
+
+/* Estilos para cada item de vacina */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o checkbox e o texto */
+}
+
+/* Estilos para os checkboxes */
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff0000; /* Cor personalizada para o checkbox */
+}
+
+/* Estilo para os rótulos de vacinas */
+.checkbox-item label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para o campo "Outro" de vacina */
+#outroVacinaGroup {
+    margin-top: 15px;
+}
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #3f0404;
+}
+
+/* Estilos para o input de vacina "Outro" */
+#outroVacinaGroup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos adicionais para melhorar a legibilidade */
+input,
+select,
+textarea {
+    font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+}
+
+/* Estilo para o campo "Especifique o tipo do pet" */
+#outroTipoPetGroup {
+    margin-top: 15px;
+}
+
+.voltar-container {
+    text-align: center; /* Centraliza o botão no container */
+}
+
+.btn-voltar {
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove as bordas padrão do botão */
+    color: #333; /* Define a cor do texto (azul, neste caso) */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    text-decoration: underline; /* Adiciona o sublinhado */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.btn-voltar:hover {
+    color: #b30000; /* Altera a cor ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}
+
+
+.btn-foto {
+    width: 100%;
+    padding: 12px;
+    background-color: #b4a2a2; /* Cor laranja avermelhada */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-foto:hover {
+    background-color: #8b7a78; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do botão */
+}
+
+.btn-foto:focus {
+    outline: none;
+}
+
+.back-link {
+    display: inline-block;
+    color: #ff0000;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}

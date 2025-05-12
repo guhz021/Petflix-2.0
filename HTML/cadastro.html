@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link rel="stylesheet" href="../CSS/styleCadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Pet</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Pet:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo">Tipo do Pet:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <!-- Campo adicional para especificar o tipo do pet -->
+            <div class="form-group" id="outroTipoPetGroup" style="display: none;">
+                <label for="outroTipo">Especifique o tipo do Pet:</label>
+                <input type="text" id="outroTipo" name="outroTipo">
+            </div>
+
+            <div class="form-group">
+                <label>Quais vacinas tomou:</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="vacina1" name="vacinas" value="Vacina Antirrábica">
+                        <label for="vacina1">Vacina Antirrábica</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="vacina2" name="vacinas" value="Vacina V8 ou V10">
+                        <label for="vacina2">Vacina V8 ou V10</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="vacina3" name="vacinas" value="Vacina quádrupla ou tríplice felina">
+                        <label for="vacina3">Vacina quádrupla ou tríplice felina</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição sobre o Pet:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+            </div>
+
+            <!-- Botão para adicionar foto -->
+            <div class="form-group">
+                <label for="imagem" class="btn-foto">Adicione uma foto</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" style="display: none;">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
+
+        <div class="form-group voltar-container">
+            <button type="button" class="back-link" onclick="history.back()">Voltar</button>
+        </div>
+    </div>
+
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="../script/scriptCadastro.js"></script>
+</body>
+</html>

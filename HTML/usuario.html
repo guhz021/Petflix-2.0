@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="../CSS/usuario.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra vermelha no topo -->
+    <header>
+        <a href="../HTML/perfil.html" class="btnVoltar">Voltar</a>
+
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="../assets/avatar3.png" alt="Foto do Perfil">
+            </div>
+            <h1 id="username">USERNAME</h1>
+        </div>
+    </header>
+
+    <!-- Container principal -->
+    <div class="main-container">
+        <!-- Container dos botões -->
+
+        <div class="options-container">            
+            <a href="../HTML/alterarSenha.html" class="option-btn">
+                Alterar senha
+                <span class="material-icons">lock</span>
+            </a>
+            <a  href="../HTML/alterarUsuario.html" class="option-btn">
+                Alterar nome de usuario
+                <span class="material-icons">edit_note</span>
+            </a>
+            <a  href="../HTML/excluirConta.html" class="option-btn">
+                Excluir conta
+                <span class="material-icons">delete</span>
+            </a>
+            <a href="../HTML/cadastro.html" class="option-btn">
+                Novo post
+                <span class="material-icons">add</span>
+            </a>
+            <a href="index.html" class="option-btn">
+                Sair 
+                <span class="material-icons">logout</span>
+            </a>
+        </div>
+
+        <!-- Container da pata e mensagem -->
+        <div class="pata-container">
+            <img src="../assets/pata.png" alt="Imagem da Pata">
+            <p>Sua ajuda é muito importante!</p>
+        </div>
+    </div>
+
+    <!-- Rodapé com informações -->
+    <footer>
+        <section class="about">
+            <h2>Sobre nós</h2>
+            <p>
+                O Petflix é uma plataforma online dedicada à doação de animais, com o objetivo de
+                proporcionar um lar acolhedor para animais que precisam de um novo dono. Desenvolvido
+                no contexto da disciplina de Desenvolvimento Ágil, o projeto visa conectar pessoas
+                dispostas a adotar com animais em busca de um novo lar, promovendo a adoção responsável
+                e o bem-estar dos pets.
+            </p>
+        </section>
+        <section class="developers">
+            <h2>Desenvolvedores</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yasmin-sayuri-4b576a263/" target="_blank">LinkedIn/Yasmin Sayuri</a></li>
+                <li><a href="https://www.linkedin.com/in/vithoriacabreira/" target="_blank">LinkedIn/VithoriaCabreira</a></li>
+                <li><a href="https://www.linkedin.com/in/leonardo-jorge-a602ba1b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn/LeonardoJorge</a></li>
+                <li><a href="https://www.linkedin.com/in/gustavo-aquino-90ba3a228/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn/GustavoAquino</a></li>
+                <li><a href="https://www.linkedin.com/in/let%C3%ADcia-fernanda-maioli-santos-b698772a9/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn/LeticiaFernanda</a></li>
+                <li><a href="https://github.com/Gabrielson481" target="_blank">GitHub/GabrielFabiano</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../script/usuario.js"></script>
+
+</body>
+</html>

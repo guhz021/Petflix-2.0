@@ -1,0 +1,142 @@
+/* Reset básico e configuração de fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.screen {
+    display: none;
+}
+
+#loginScreen {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.logo img {
+    width: 500px;
+    margin-bottom: 20px;
+    animation: logoAnimation 4s ease inifinite;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animação para fazer o logo desaparecer ao clicar */
+@keyframes logoAnimationOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.btn {
+    background-color: #e50914;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #f40612;
+}
+
+#profileScreen {
+    display: none;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInProfileScreen 1s forwards;
+}
+
+@keyframes fadeInProfileScreen {
+    to {
+        opacity: 1;
+    }
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;  /* Tamanho da imagem */
+    height: 100px; /* Tamanho da imagem */
+    border-radius: 50%;  /* Tornando a imagem redonda */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    object-fit: cover; /* A imagem não distorcerá ao se ajustar */
+}
+
+.profile div {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+a.button {
+    text-decoration: none;  
+    color: white;  
+    transition: color 0.3s;  
+}
+
+.profile div:hover {
+    background-color: #e50914;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}

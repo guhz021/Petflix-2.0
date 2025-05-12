@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adotar - Petflix</title>
+    <link rel="stylesheet" href="../CSS/adotar.css">
+</head>
+<body>
+    <header>
+        <h1>Adote um Amigo</h1>
+        <div class="filters">
+            <select id="filter-gender">
+                <option value="">Todos</option>
+                <option value="M">Macho</option>
+                <option value="F">Fêmea</option>
+            </select>
+            <select id="filter-age">
+                <option value="">Todas as idades</option>
+                <option value="filhote">Filhote</option>
+                <option value="adulto">Adulto</option>
+            </select>
+            <button  onclick="showFavorites()">Favoritos</button>
+            <a href="../HTML/perfil.html" class="btnVoltar">Voltar</a>
+
+        </div>
+    </header>
+    <main id="feed"></main>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="../script/adotar.js" defer></script>
+
+</body>
+</html>
