@@ -14,7 +14,7 @@
 |-|
  |Um projeto desenvolvido na disciplina de Programação Web Front-End, onde será demonstrado a aplicação de conceitos de desenvolvimento web dentro do progresso do Petflix.|
 
- |📄 **Descrição**|
+ | **Participantes**|
 |-|
  |Gustavo Alves de Aquino
  Gabriel Fabiano De Oliveira|
