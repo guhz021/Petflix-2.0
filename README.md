@@ -9,12 +9,14 @@
 
 </div>
 
+ 
+## <div align="center">INFORMAÇÕES</div>
+
  | **Participantes**|
 |-|
  |Gustavo Alves de Aquino
  Gabriel Fabiano De Oliveira|
  
-## <div align="center">INFORMAÇÕES</div>
 |📄 **Descrição**|
 |-|
  |Um projeto desenvolvido na disciplina de Programação Web Front-End, onde será demonstrado a aplicação de conceitos de desenvolvimento web dentro do progresso do Petflix.|
