@@ -2,10 +2,6 @@
 
 <div align="center">
  
-|<h3>ﾠﾠ                                   ÍNDICE                                   </h3>|
-|-|
-
-
 </div>
 
  
