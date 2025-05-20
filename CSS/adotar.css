@@ -81,3 +81,19 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
   }
 
+footer{
+    background: #891111;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+ul, li {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none; 
+}
