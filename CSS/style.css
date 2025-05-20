@@ -41,7 +41,7 @@ body {
 .logo img {
     width: 500px;
     margin-bottom: 20px;
-    animation: logoAnimation 4s ease inifinite;
+    animation: logoAnimation 4s ease infinite;
 }
 
 @keyframes logoAnimation {
